@@ -19,7 +19,7 @@
 
 		ahci {
 			pcie_root = "00:11.0,03.0";
-			ata_port = <0x04>;
+			ata_port = <0x02>;
 		};
 	};
 	
@@ -28,7 +28,7 @@
 
 		ahci {
 			pcie_root = "00:11.0,03.0";
-			ata_port = <0x02>;
+			ata_port = <0x03>;
 		};
 	};
 
@@ -37,7 +37,7 @@
 
 		ahci {
 			pcie_root = "00:11.0,03.0";
-			ata_port = <0x03>;
+			ata_port = <0x04>;
 		};
 	};
 };
