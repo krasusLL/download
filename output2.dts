@@ -1,0 +1,43 @@
+/dts-v1/;
+
+/ {
+	compatible = "Synology";
+	model = "synology_geminilake_920+";
+	version = <0x01>;
+
+	internal_slot@1 {
+		protocol_type = "sata";
+
+		ahci {
+			pcie_root = "00:11.0,03.0";
+			ata_port = <0x01>;
+		};
+	};
+
+	internal_slot@2 {
+		protocol_type = "sata";
+
+		ahci {
+			pcie_root = "00:11.0,03.0";
+			ata_port = <0x04>;
+		};
+	};
+	
+	esata_port@1 {
+		protocol_type = "sata";
+
+		ahci {
+			pcie_root = "00:11.0,03.0";
+			ata_port = <0x02>;
+		};
+	};
+
+	esata_port@2 {
+		protocol_type = "sata";
+
+		ahci {
+			pcie_root = "00:11.0,03.0";
+			ata_port = <0x03>;
+		};
+	};
+};
